@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>AddnewsServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.AddnewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManagenewsServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.ManagenewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterNewsServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.AlterNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewMsgServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.NewMsgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReMsgServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.ReMsgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.AddProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ManageProServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.ManageProServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AlterProServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.AlterProServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.LoginServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AddnewsServlet</servlet-name>
+    <url-pattern>/addnews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagenewsServlet</servlet-name>
+    <url-pattern>/managenews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterNewsServlet</servlet-name>
+    <url-pattern>/alternews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewMsgServlet</servlet-name>
+    <url-pattern>/newmsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReMsgServlet</servlet-name>
+    <url-pattern>/remsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/addproduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManageProServlet</servlet-name>
+    <url-pattern>/managepro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterProServlet</servlet-name>
+    <url-pattern>/alterpro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

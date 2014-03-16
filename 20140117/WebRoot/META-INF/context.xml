@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+<Resource
+	name="jdbc/zeng"
+	type="javax.sql.DataSource"
+	maxActive="100"
+	maxIdle="2"
+	username="scott"
+	password="tiger"
+	maxWait="1000"
+	driverClassName="oracle.jdbc.OracleDriver"
+	url="jdbc:oracle:thin:@localhost:1521:zeng"/>
+</Context>

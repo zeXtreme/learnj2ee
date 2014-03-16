@@ -1,0 +1,19 @@
+#news ul{
+	margin:0px;
+	padding:0px;
+}
+#news li {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-bottom-style: dashed;
+	line-height:24px;
+	margin:5px;
+	list-style-position:inside;
+	list-style-type:none;
+	padding-bottom:3px;
+}
+#news a {
+	text-decoration:none;
+}

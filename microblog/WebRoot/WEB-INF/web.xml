@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.RegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SetPwdServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.SetPwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewPostServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.NewPostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewCommentServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.NewCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeletePostServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.DeletePostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FollowServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.FollowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CancelFollowServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.CancelFollowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveFansServlet</servlet-name>
+    <servlet-class>me.zwy.servlet.RemoveFansServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/regist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetPwdServlet</servlet-name>
+    <url-pattern>/setpwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewPostServlet</servlet-name>
+    <url-pattern>/newpost</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewCommentServlet</servlet-name>
+    <url-pattern>/newcomment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePostServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FollowServlet</servlet-name>
+    <url-pattern>/follow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CancelFollowServlet</servlet-name>
+    <url-pattern>/cancelfollow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveFansServlet</servlet-name>
+    <url-pattern>/removefans</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    <filter>
+        <filter-name>encodefilter</filter-name>
+        <filter-class>me.zwy.filter.EncodeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodefilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
